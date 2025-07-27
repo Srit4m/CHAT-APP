@@ -71,8 +71,8 @@ const SignUpPage = () => {
                 <span className="label-text font-medium">Full Name</span>
               </label>
               <div className="relative">
-                <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                  <User className="size-5 text-base-content/40" />
+                <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none z-10">
+                  <User className="size-5 text-gray-400" />
                 </div>
                 <input
                   type="text"
@@ -91,8 +91,8 @@ const SignUpPage = () => {
                 <span className="label-text font-medium">Email</span>
               </label>
               <div className="relative">
-                <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                  <Mail className="size-5 text-base-content/40" />
+                <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none z-10">
+                  <Mail className="size-5 text-gray-400" />
                 </div>
                 <input
                   type="email"
@@ -111,8 +111,8 @@ const SignUpPage = () => {
                 <span className="label-text font-medium">Password</span>
               </label>
               <div className="relative">
-                <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                  <Lock className="size-5 text-base-content/40" />
+                <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none z-10">
+                  <Lock className="size-5 text-gray-400" />
                 </div>
                 <input
                   type={showPassword ? "text" : "password"}
@@ -125,13 +125,13 @@ const SignUpPage = () => {
                 />
                 <button
                   type="button"
-                  className="absolute inset-y-0 right-0 pr-3 flex items-center"
+                  className="absolute inset-y-0 right-0 pr-3 flex items-center z-10"
                   onClick={() => setShowPassword(!showPassword)}
                 >
                   {showPassword ? (
-                    <EyeOff className="size-5 text-base-content/40" />
+                    <EyeOff className="size-5 text-gray-400" />
                   ) : (
-                    <Eye className="size-5 text-base-content/40" />
+                    <Eye className="size-5 text-gray-400" />
                   )}
                 </button>
               </div>
